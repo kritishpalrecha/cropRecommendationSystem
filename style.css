@@ -1,0 +1,174 @@
+body {
+    align-items: center;
+    background-color: rgb(217, 236, 163);
+    display: flex;
+    
+    width: 100%;
+
+  }
+  
+  .form {
+    background-color:  hsl(133, 23%, 48%);;
+    border-radius: 20px;
+
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content:center;
+    padding: 15px;
+width: 300px;
+flex-shrink: 2;
+height: 88vh;
+ 
+ 
+  }
+  
+  .title {
+    color: rgb(31, 29, 29);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: rgb(10, 10, 10);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 40px;
+    position: relative;
+    width: 85%;
+  }
+  
+  .ic1 {
+    margin-top: 35px;
+  }
+  
+  .ic2 {
+    margin-top: 27px;
+  }
+  
+  .input {
+    
+    background-color: #d9ddff;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(3, 3, 3);
+    font-size: 15px;
+    height: 4vh;
+    outline: 0;
+   text-align: center;
+ align-self: center;
+    width: 100%;
+    flex-shrink: 2;
+  }
+  
+  .cut {
+    background-color:   hsl(133, 23%, 48%);
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 10px;
+    text-align: center;
+   
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #e6e6f0;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #4d371c;
+  }
+  
+  .submit {
+    background-color: rgb(26, 92, 35);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 80px;
+    margin-top: 38px;
+     outline: 0;
+     align-self: center;
+    text-align: center;
+    width: 60%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  .maincontainer{
+width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-content: center;
+    padding: 25px;
+  margin: 20px 20px 20px 20px;
+
+  }
+  .maintitle{
+
+  font-size: 5vh;
+  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+
+margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  flex-shrink: 2;
+  }
+.img{
+  height:auto;
+  width: 400px;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
+  flex-shrink: 2;
+  margin-top: 2vh;
+
+}
