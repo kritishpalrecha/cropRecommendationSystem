@@ -1,3 +1,7 @@
+
+html{
+  transform: scale(90%) 
+}
 body {
     align-items: center;
     background-color: rgb(217, 236, 163);
